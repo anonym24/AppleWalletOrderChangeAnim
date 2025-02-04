@@ -62,9 +62,10 @@ fun ScreenContent(modifier: Modifier = Modifier) {
     val cardPctHeight = 0.1f
     val cardLastPctHeight = 0.5f
 
+    // https://github.com/Calvin-LL/Reorderable
     val reorderableLazyListState = rememberReorderableLazyListState(
         lazyListState = lazyListState,
-        shouldItemMoveThreshold = (CARD_HEIGHT * cardPctHeight) / 2f // added to param
+        shouldItemMoveThreshold = (CARD_HEIGHT * cardPctHeight) / 2f // added new param to reorderable library
     ) { from, to ->
         items = items.toMutableList().apply {
             add(to.index, removeAt(from.index))
