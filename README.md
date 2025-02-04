@@ -1,1 +1,1 @@
-The sample uses the following reorderable library https://github.com/aclassen/ComposeReorderable
+The sample uses the following reorderable library https://github.com/Calvin-LL/Reorderable
